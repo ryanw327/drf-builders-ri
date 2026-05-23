@@ -135,8 +135,8 @@ export default async function SeoLandingPage({ params }: PageProps) {
                 <h2 className="text-2xl font-black text-slate-950">Request a Free Roofing Estimate</h2>
                 <p className="mt-3 leading-7 text-slate-700">
                   Call or text D.R.F Builders RI at 401-837-3779 to discuss {page.serviceName.toLowerCase()} in {page.locationName}
-                  {page.locationName === "Rhode Island" ? "" : ", RI"}. You can also use the contact form and your email app will open a
-                  prepared estimate request.
+                  {page.locationName === "Rhode Island" ? "" : ", RI"}. You can also use the contact form below to send a roofing
+                  estimate request directly.
                 </p>
                 <a href="#contact" className="mt-5 inline-flex rounded-md bg-orange-600 px-5 py-3 font-black text-white hover:bg-orange-700">
                   Request a Free Roofing Estimate
@@ -202,7 +202,7 @@ export default async function SeoLandingPage({ params }: PageProps) {
               <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-700">Contact D.R.F Builders RI</p>
               <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Request a Free Roofing Estimate</h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                Tell us what is happening with your roof and the form will open an email draft to D.R.F Builders RI.
+                Tell us what is happening with your roof and the form will send your request directly to D.R.F Builders RI.
               </p>
             </div>
             <ContactForm />

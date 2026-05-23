@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Building2, CheckCircle2, Clock, Home, Star, Wrench } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -278,7 +279,7 @@ export default function HomePage() {
         </section>
 
         <section id="contact" className="bg-orange-600 px-4 py-12 text-white sm:px-6 lg:px-8">
-          <div className="mx-auto grid max-w-7xl gap-7 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
               <p className="mb-2 text-sm font-black uppercase tracking-[0.16em] text-orange-100">Free estimates</p>
               <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Need Roofing Help in Rhode Island?</h2>
@@ -286,15 +287,11 @@ export default function HomePage() {
                 Call or text D.R.F Builders RI for roof repair, roof replacement, emergency service, insurance repair support,
                 commercial roofing, and inspections across Cranston, Providence, Warwick, Bristol, and nearby communities.
               </p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2 lg:min-w-[360px] lg:grid-cols-1">
-              <a href="tel:+14018373779" className="rounded-md bg-slate-950 px-6 py-4 text-center font-black text-white hover:bg-slate-900">
+              <a href="tel:+14018373779" className="mt-6 inline-flex rounded-md bg-slate-950 px-6 py-4 text-center font-black text-white hover:bg-slate-900">
                 Call 401-837-3779
               </a>
-              <a href="mailto:buildersdrf@gmail.com?subject=Free%20roofing%20estimate%20request" className="rounded-md border border-white/40 bg-white/15 px-6 py-4 text-center font-black text-white hover:bg-white/25">
-                Email for an Estimate
-              </a>
             </div>
+            <ContactForm />
           </div>
           <div className="mx-auto mt-8 grid max-w-7xl gap-3 text-sm font-bold sm:grid-cols-2 lg:grid-cols-4">
             <Link href="/roof-insurance-claim-repair-support-ri" className="rounded-md bg-white/15 px-4 py-3 hover:bg-white/25">
