@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const navItems = [
-  ["About", "#about"],
-  ["Services", "#services"],
-  ["Reviews", "#reviews"],
-  ["Service Area", "#service-area"],
-  ["Contact", "#contact"]
+  ["About", "/#about"],
+  ["Services", "/#services"],
+  ["Reviews", "/#reviews"],
+  ["Service Area", "/#service-area"],
+  ["Contact", "/#contact"]
 ];
 
 export function SiteFooter() {
@@ -13,13 +13,15 @@ export function SiteFooter() {
     <footer className="bg-slate-950 text-white">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_auto] lg:px-8">
         <div>
-          <Image
-            src="/assets/drf-logo.png"
-            alt="D.R.F Builders RI logo"
-            width={190}
-            height={78}
-            className="mb-5 h-16 w-auto bg-white object-contain p-2"
-          />
+          <a href="/" aria-label="D.R.F Builders RI home">
+            <Image
+              src="/assets/drf-logo.png"
+              alt="D.R.F Builders RI logo"
+              width={190}
+              height={78}
+              className="mb-5 h-16 w-auto bg-white object-contain p-2"
+            />
+          </a>
           <p className="max-w-xl text-sm leading-6 text-slate-300">
             Local Rhode Island roofing for repairs, replacements, inspections, emergency service, and roof maintenance.
           </p>
