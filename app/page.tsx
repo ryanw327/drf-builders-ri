@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Building2, CheckCircle2, ClipboardCheck, Clock, Hammer, HardHat, Home, Mail, MapPin, Phone, Wrench } from "lucide-react";
+import { Building2, CheckCircle2, ClipboardCheck, Clock, FileText, Hammer, HardHat, Home, Mail, MapPin, Phone, Wrench } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -93,6 +93,12 @@ const quoteServices = [
     copy: "Repair estimates for wind damage, lifted shingles, rain leaks, and roofing problems that show up after Rhode Island weather.",
     href: "/emergency-roof-repair-ri",
     cta: "Check Storm Damage"
+  },
+  {
+    title: "Insurance Repair Support",
+    copy: "Roof damage documentation, clear repair estimates, adjuster meeting support, and approved roofing work after storm or leak damage.",
+    href: "/roof-insurance-claim-repair-support-ri",
+    cta: "Get Claim Repair Support"
   },
   {
     title: "Commercial Flat Roofing",
@@ -275,6 +281,44 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="bg-slate-950 px-4 py-16 text-white sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <div>
+              <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-300">Insurance repair support</p>
+              <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Roof Damage Help When Insurance Is Involved</h2>
+              <p className="mt-5 text-lg leading-8 text-slate-200">
+                D.R.F Builders RI helps Rhode Island homeowners with roof damage repairs connected to insurance claims. Our team
+                can inspect storm or leak damage, document roof conditions, prepare a clear repair or replacement estimate, meet
+                with the insurance adjuster on-site, and answer technical roofing questions about the repair scope.
+              </p>
+              <p className="mt-4 leading-7 text-slate-300">
+                Homeowners remain responsible for their insurance claim decisions, and claim coverage questions should be handled
+                directly with the insurance carrier or a licensed public adjuster.
+              </p>
+              <Link
+                href="/roof-insurance-claim-repair-support-ri"
+                className="mt-7 inline-flex rounded-md bg-orange-600 px-5 py-3 font-black text-white hover:bg-orange-700"
+              >
+                Learn About Insurance Repair Support
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                ["Damage Photos", "Document visible roof damage after wind, rain, storm events, or active leaks."],
+                ["Repair Scope", "Prepare roofing estimates and repair or replacement scope for the work needed."],
+                ["Adjuster Meeting", "Be present during the carrier inspection to answer technical roofing questions."],
+                ["Approved Repairs", "Complete roof repair or replacement work once the homeowner is ready to move forward."]
+              ].map(([title, copy]) => (
+                <article key={title} className="rounded-lg border border-white/10 bg-white/8 p-5">
+                  <FileText className="mb-4 h-7 w-7 text-orange-300" aria-hidden="true" />
+                  <h3 className="text-lg font-black">{title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">{copy}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="about" className="bg-white px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div className="grid grid-cols-2 gap-3">
@@ -299,7 +343,7 @@ export default function HomePage() {
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
                 <p className="rounded-md bg-slate-100 p-4 font-bold text-slate-900">Roofing company Cranston RI</p>
                 <p className="rounded-md bg-slate-100 p-4 font-bold text-slate-900">Roofing company Providence RI</p>
-                <p className="rounded-md bg-slate-100 p-4 font-bold text-slate-900">Roof repair Rhode Island</p>
+                <p className="rounded-md bg-slate-100 p-4 font-bold text-slate-900">Insurance roof repair support RI</p>
                 <p className="rounded-md bg-slate-100 p-4 font-bold text-slate-900">Roof replacement Rhode Island</p>
               </div>
             </div>

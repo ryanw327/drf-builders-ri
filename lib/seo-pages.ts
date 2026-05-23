@@ -283,6 +283,60 @@ export const cityPages: SeoPage[] = [
 
 export const servicePages: SeoPage[] = [
   {
+    slug: "roof-insurance-claim-repair-support-ri",
+    kind: "service",
+    serviceName: "Roof Insurance Claim Repair Support",
+    locationName: "Rhode Island",
+    title: "Roof Insurance Claim Repair Support RI",
+    metaTitle: "Roof Insurance Claim Repair Support in Rhode Island | D.R.F Builders RI",
+    metaDescription:
+      "D.R.F Builders RI helps Rhode Island homeowners with roof damage documentation, repair estimates, adjuster meeting support, and insurance-related roof repairs.",
+    eyebrow: "Insurance roof repair support",
+    h1: "Roof Insurance Claim Repair Support in Rhode Island",
+    intro:
+      "D.R.F Builders RI provides roof insurance claim repair support for Rhode Island homeowners and businesses, including storm damage documentation, leak repair estimates, repair scope preparation, adjuster meeting support, emergency roof service, and approved roof repair or replacement work.",
+    servicesHeading: "Roof Insurance Claim Repair Support Services in Rhode Island",
+    sections: [
+      {
+        title: "Roof Damage Documentation and Repair Estimates",
+        copy:
+          "When a roof is damaged by wind, rain, falling debris, or a sudden leak, D.R.F Builders RI can inspect the roof, document visible roofing damage, and prepare a clear repair or replacement estimate for the work needed."
+      },
+      {
+        title: "Technical Roofing Support During the Claim Process",
+        copy:
+          "Our team can be present when the insurance adjuster inspects the roof and can answer technical questions about roof damage, materials, measurements, and repair scope."
+      }
+    ],
+    commonProblems: [
+      "Storm damage roof repairs",
+      "Wind-lifted or missing shingles",
+      "Emergency roof leaks",
+      "Flashing and roof penetration leaks",
+      "Insurance-related roof replacement documentation"
+    ],
+    whyChoose:
+      "Rhode Island homeowners choose D.R.F Builders RI for organized documentation, clear repair scopes, professional communication, clean job sites, and roofing work completed after the claim and repair path is clear.",
+    faqs: [
+      {
+        question: "Can D.R.F Builders RI help with roof damage connected to an insurance claim?",
+        answer:
+          "Yes. D.R.F Builders RI can inspect roof damage, document roof conditions, prepare repair or replacement estimates, meet the carrier adjuster on-site, and answer technical roofing questions about the repair scope."
+      },
+      {
+        question: "Does D.R.F Builders RI negotiate insurance claims?",
+        answer:
+          "No. D.R.F Builders RI provides roofing documentation, repair estimates, and technical project support. Homeowners should handle claim coverage questions directly with their insurance carrier or a licensed public adjuster."
+      },
+      {
+        question: "Can D.R.F Builders RI complete the roof repairs after a claim is approved?",
+        answer:
+          "Yes. D.R.F Builders RI can complete roof repairs, roof replacement, emergency roof leak repairs, and related roofing work once the homeowner is ready to move forward."
+      }
+    ],
+    related: ["emergency-roof-repair-ri", "roof-repair-ri", "roof-replacement-ri"]
+  },
+  {
     slug: "roof-repair-ri",
     kind: "service",
     serviceName: "Roof Repair",
