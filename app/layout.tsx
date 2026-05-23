@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { StickyMobileBar } from "@/components/StickyMobileBar";
 import "./globals.css";
 
 const siteUrl = "https://www.drfbuildersri.com";
@@ -41,7 +42,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <StickyMobileBar />
+      </body>
     </html>
   );
 }

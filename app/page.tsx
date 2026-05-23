@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Building2, CheckCircle2, Clock, Home, Phone, Star, Wrench } from "lucide-react";
+import { Building2, CheckCircle2, Clock, Home, Star, Wrench } from "lucide-react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -103,7 +103,7 @@ export default function HomePage() {
       <main id="top" className="pb-16 md:pb-0">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-        <section className="relative isolate overflow-hidden bg-slate-950 text-white">
+        <section data-mobile-hero className="relative isolate overflow-hidden bg-slate-950 text-white">
           <Image
             src="/assets/roof-4.webp"
             alt="Completed asphalt shingle roof on a Rhode Island home"
@@ -312,15 +312,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 border-t border-white/10 bg-slate-950 text-sm font-black text-white shadow-2xl md:hidden">
-        <a href="tel:+14018373779" className="flex items-center justify-center gap-2 px-3 py-4">
-          <Phone className="h-4 w-4 text-orange-300" aria-hidden="true" />
-          Call Now
-        </a>
-        <a href="/#contact" className="flex items-center justify-center gap-2 bg-orange-600 px-3 py-4">
-          Free Estimate
-        </a>
-      </div>
       <SiteFooter />
     </>
   );

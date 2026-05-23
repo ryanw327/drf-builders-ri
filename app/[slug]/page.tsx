@@ -63,7 +63,7 @@ export default async function SeoLandingPage({ params }: PageProps) {
     <>
       <SiteHeader />
       <main>
-        <section className="relative isolate overflow-hidden bg-slate-950 text-white">
+        <section data-mobile-hero className="relative isolate overflow-hidden bg-slate-950 text-white">
           <Image
             src="/assets/roof-1.webp"
             alt={`D.R.F Builders RI roofing project for ${page.serviceName.toLowerCase()} in ${page.locationName}`}
