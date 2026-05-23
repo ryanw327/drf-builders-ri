@@ -1,20 +1,24 @@
 import Image from "next/image";
-import { Building2, CheckCircle2, ClipboardCheck, Clock, Hammer, HardHat, Home, Mail, MapPin, Phone, ShieldCheck, Star, Wrench } from "lucide-react";
+import Link from "next/link";
+import { Building2, CheckCircle2, ClipboardCheck, Clock, Hammer, HardHat, Home, Mail, MapPin, Phone, Star, Wrench } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { cityPages, servicePages } from "@/lib/seo-pages";
 
 const services = [
   {
     title: "Roof Repair",
     copy: "Fast roof repair in Rhode Island for leaks, missing shingles, flashing issues, storm damage, and aging roof trouble.",
-    icon: Wrench
+    icon: Wrench,
+    href: "/roof-repair-ri"
   },
   {
     title: "Roof Replacement",
     copy: "Complete roof replacement for Rhode Island homes and businesses with durable materials built for New England weather.",
-    icon: Home
+    icon: Home,
+    href: "/roof-replacement-ri"
   },
   {
     title: "Emergency Roof Repair",
@@ -29,12 +33,14 @@ const services = [
   {
     title: "Residential Roofing",
     copy: "Residential roofing services for single-family homes, multi-family properties, and neighborhood homes throughout RI.",
-    icon: HardHat
+    icon: HardHat,
+    href: "/residential-roofing-ri"
   },
   {
     title: "Commercial Roofing",
-    copy: "Commercial roofing in Rhode Island for offices, small businesses, apartment buildings, and low-slope roof systems.",
-    icon: Building2
+    copy: "Commercial roofing in Rhode Island for offices, small businesses, apartment buildings, and local commercial properties.",
+    icon: Building2,
+    href: "/commercial-roofing-ri"
   },
   {
     title: "Shingle Roofing",
@@ -42,14 +48,10 @@ const services = [
     icon: Hammer
   },
   {
-    title: "Flat Roofing",
-    copy: "Flat roofing and low-slope roofing support for commercial and residential buildings across Rhode Island.",
-    icon: ShieldCheck
-  },
-  {
     title: "Gutter Cleaning / Roof Maintenance",
     copy: "Roof maintenance and gutter cleaning to help prevent water damage and keep Rhode Island roofs performing season after season.",
-    icon: CheckCircle2
+    icon: CheckCircle2,
+    href: "/gutter-cleaning-roof-maintenance-ri"
   }
 ];
 
@@ -114,7 +116,6 @@ const schema = {
     "Residential Roofing",
     "Commercial Roofing",
     "Shingle Roofing",
-    "Flat Roofing",
     "Gutter Cleaning",
     "Roof Maintenance"
   ]
@@ -192,11 +193,16 @@ export default function HomePage() {
             copy="D.R.F. Builders RI helps Rhode Island property owners protect homes, businesses, and multi-family buildings with practical roofing solutions."
           />
           <div className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map(({ title, copy, icon: Icon }) => (
+            {services.map(({ title, copy, icon: Icon, href }) => (
               <article key={title} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
                 <Icon className="mb-5 h-9 w-9 text-orange-600" aria-hidden="true" />
                 <h3 className="text-xl font-black text-slate-950">{title}</h3>
                 <p className="mt-3 leading-7 text-slate-600">{copy}</p>
+                {href ? (
+                  <Link href={href} className="mt-5 inline-flex font-black text-orange-700 hover:text-orange-800">
+                    Learn more
+                  </Link>
+                ) : null}
               </article>
             ))}
           </div>
@@ -306,12 +312,60 @@ export default function HomePage() {
               </div>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {["Providence", "Cranston", "Warwick", "Pawtucket", "East Providence", "Johnston", "North Providence", "Coventry", "West Warwick"].map((city) => (
-                <div key={city} className="flex items-center gap-2 rounded-md border border-slate-200 bg-slate-50 px-4 py-3 font-bold text-slate-900">
+              {[
+                { city: "Providence", href: "/roofing-company-providence-ri" },
+                { city: "Cranston", href: "/roofing-company-cranston-ri" },
+                { city: "Warwick", href: "/roofing-company-warwick-ri" },
+                { city: "Pawtucket", href: "/roof-repair-pawtucket-ri" },
+                { city: "East Providence", href: "/roofing-company-east-providence-ri" },
+                { city: "Johnston" },
+                { city: "North Providence" },
+                { city: "Coventry" },
+                { city: "West Warwick" }
+              ].map(({ city, href }) => (
+                <Link
+                  key={city}
+                  href={href ?? "#contact"}
+                  className="flex items-center gap-2 rounded-md border border-slate-200 bg-slate-50 px-4 py-3 font-bold text-slate-900 transition hover:border-orange-300 hover:bg-orange-50"
+                >
                   <MapPin className="h-5 w-5 text-orange-600" aria-hidden="true" />
                   {city}
-                </div>
+                </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-slate-950 px-4 py-16 text-white sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
+            <div>
+              <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-300">Local SEO pages</p>
+              <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Rhode Island Roofing Help by City and Service</h2>
+              <p className="mt-4 leading-7 text-slate-300">
+                Explore local roofing pages for D.R.F. Builders RI service areas and core roofing services across Rhode Island.
+              </p>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <h3 className="mb-3 font-black text-orange-300">Service Areas</h3>
+                <div className="grid gap-2">
+                  {cityPages.map((page) => (
+                    <Link key={page.slug} href={`/${page.slug}`} className="rounded-md border border-white/10 bg-white/8 px-4 py-3 font-bold text-slate-100 hover:bg-white/15">
+                      {page.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="mb-3 font-black text-orange-300">Roofing Services</h3>
+                <div className="grid gap-2">
+                  {servicePages.map((page) => (
+                    <Link key={page.slug} href={`/${page.slug}`} className="rounded-md border border-white/10 bg-white/8 px-4 py-3 font-bold text-slate-100 hover:bg-white/15">
+                      {page.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
