@@ -18,7 +18,7 @@ export function SiteHeader() {
             alt="D.R.F Builders RI logo"
             width={176}
             height={72}
-            className="h-12 w-auto object-contain sm:h-14"
+            className="h-10 w-auto object-contain sm:h-14"
             priority
           />
         </a>
@@ -34,9 +34,10 @@ export function SiteHeader() {
         </a>
         <a
           href="/#contact"
-          className="rounded-md bg-orange-600 px-4 py-3 text-center text-sm font-bold text-white shadow-lg shadow-orange-900/15 transition hover:bg-orange-700 sm:px-5"
+          className="rounded-md bg-orange-600 px-3 py-2.5 text-center text-xs font-bold text-white shadow-lg shadow-orange-900/15 transition hover:bg-orange-700 sm:px-5 sm:py-3 sm:text-sm"
         >
-          Free Roofing Estimate
+          <span className="sm:hidden">Estimate</span>
+          <span className="hidden sm:inline">Free Roofing Estimate</span>
         </a>
       </div>
     </header>

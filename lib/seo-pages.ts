@@ -283,6 +283,49 @@ export const cityPages: SeoPage[] = [
 
 export const servicePages: SeoPage[] = [
   {
+    slug: "roofing-services-ri",
+    kind: "service",
+    serviceName: "Roofing Services",
+    locationName: "Rhode Island",
+    title: "Roofing Services RI",
+    metaTitle: "Roofing Services in Rhode Island | D.R.F Builders RI",
+    metaDescription:
+      "D.R.F Builders RI provides roofing services across Rhode Island, including roof repair, roof replacement, emergency roofing, inspections, commercial roofing, and insurance repair support.",
+    eyebrow: "Rhode Island roofing services",
+    h1: "Roofing Services in Rhode Island",
+    intro:
+      "D.R.F Builders RI provides roofing services for homeowners and businesses across Rhode Island, including roof repair, roof replacement, emergency roof service, inspections, storm damage repair, commercial roofing, flat roofing guidance, and insurance repair support.",
+    servicesHeading: "Roofing Services in Rhode Island",
+    sections: [
+      {
+        title: "Roof Repair, Replacement, and Emergency Service",
+        copy:
+          "From active roof leaks to full roof replacement, D.R.F Builders RI helps property owners understand the problem, review the right repair path, and move forward with clear communication."
+      },
+      {
+        title: "Residential and Commercial Roofing",
+        copy:
+          "D.R.F Builders RI works with Rhode Island homeowners, businesses, landlords, and property owners who need practical roofing support."
+      }
+    ],
+    commonProblems: ["Roof leaks", "Storm damage", "Missing shingles", "Flashing problems", "Roof maintenance needs", "Insurance-related roof repairs"],
+    whyChoose:
+      "Rhode Island homeowners and businesses choose D.R.F Builders RI for local service, owner involvement, free estimates, clean job sites, and professional communication.",
+    faqs: [
+      {
+        question: "What roofing services does D.R.F Builders RI offer?",
+        answer:
+          "D.R.F Builders RI offers roof repair, roof replacement, emergency roof repair, inspections, maintenance, commercial roofing, residential roofing, and insurance repair support."
+      },
+      {
+        question: "What areas does D.R.F Builders RI serve?",
+        answer:
+          "D.R.F Builders RI serves Cranston, Providence, Warwick, Bristol, Pawtucket, East Providence, and nearby Rhode Island communities."
+      }
+    ],
+    related: ["roof-repair-ri", "roof-replacement-ri", "emergency-roof-repair-ri"]
+  },
+  {
     slug: "roof-insurance-claim-repair-support-ri",
     kind: "service",
     serviceName: "Roof Insurance Claim Repair Support",
