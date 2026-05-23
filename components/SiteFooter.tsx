@@ -15,7 +15,7 @@ export function SiteFooter() {
         <div>
           <Image
             src="/assets/drf-logo.png"
-            alt="D.R.F. Builders RI logo"
+            alt="D.R.F Builders RI logo"
             width={190}
             height={78}
             className="mb-5 h-16 w-auto bg-white object-contain p-2"
@@ -33,7 +33,7 @@ export function SiteFooter() {
         </nav>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-sm text-slate-400">
-        Copyright 2026 D.R.F. Builders RI. All rights reserved.
+        Copyright 2026 D.R.F Builders RI. All rights reserved.
       </div>
     </footer>
   );

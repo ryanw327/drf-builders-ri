@@ -5,24 +5,24 @@ const siteUrl = "https://drfbuildersri.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "D.R.F. Builders RI | Roofing Contractor in Rhode Island",
+  title: "Roofing Contractor in Rhode Island | D.R.F Builders RI",
   description:
-    "D.R.F. Builders RI offers residential and commercial roofing across Rhode Island, including roof repairs, replacements, inspections, and emergency roofing services. Get a free estimate today.",
+    "D.R.F Builders RI provides roof repair, roof replacement, emergency roofing, flat roofing, and commercial roofing services across Rhode Island. Call for a free estimate.",
   alternates: {
     canonical: "/"
   },
   openGraph: {
-    title: "D.R.F. Builders RI | Roofing Contractor in Rhode Island",
+    title: "Roofing Contractor in Rhode Island | D.R.F Builders RI",
     description:
-      "Residential and commercial roofing across Rhode Island, including roof repairs, replacements, inspections, and emergency roofing services.",
+      "Roof repair, roof replacement, emergency roofing, flat roofing, and commercial roofing services across Rhode Island.",
     url: siteUrl,
-    siteName: "D.R.F. Builders RI",
+    siteName: "D.R.F Builders RI",
     images: [
       {
         url: "/assets/roof-4.webp",
         width: 1200,
         height: 630,
-        alt: "Completed Rhode Island roof by D.R.F. Builders RI"
+        alt: "Residential roof replacement project in Rhode Island by D.R.F Builders RI"
       }
     ],
     locale: "en_US",

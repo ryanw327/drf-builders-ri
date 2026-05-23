@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Building2, CheckCircle2, ClipboardCheck, Clock, Hammer, HardHat, Home, Mail, MapPin, Phone, Star, Wrench } from "lucide-react";
+import { Building2, CheckCircle2, ClipboardCheck, Clock, Hammer, HardHat, Home, Mail, MapPin, Phone, Wrench } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -43,6 +43,12 @@ const services = [
     href: "/commercial-roofing-ri"
   },
   {
+    title: "Flat Roofing",
+    copy: "Commercial flat roofing and low-slope roofing guidance for Rhode Island properties that need repair, inspection, or maintenance support.",
+    icon: Building2,
+    href: "/flat-roofing-ri"
+  },
+  {
     title: "Shingle Roofing",
     copy: "Asphalt shingle roof installation and repair for Rhode Island properties needing dependable curb appeal and protection.",
     icon: Hammer
@@ -55,39 +61,59 @@ const services = [
   }
 ];
 
-const trustItems = ["Licensed & Insured", "Residential & Commercial Roofing", "Emergency Roof Repairs", "Serving All of Rhode Island"];
+const trustItems = ["Local Rhode Island Roofing", "Residential & Commercial Roofing", "Emergency Roof Repairs", "Free Roofing Estimates"];
+
+const quoteServices = [
+  {
+    title: "Roof Leak Repair",
+    copy: "Targeted help for active leaks, ceiling stains, missing shingles, flashing issues, and water entering Rhode Island homes or businesses.",
+    href: "/roof-repair-ri"
+  },
+  {
+    title: "Roof Replacement",
+    copy: "Full roof replacement estimates for aging roofs, repeated leaks, storm damage, and properties ready for a stronger roofing system.",
+    href: "/roof-replacement-ri"
+  },
+  {
+    title: "Storm Damage Roof Repair",
+    copy: "Repair estimates for wind damage, lifted shingles, rain leaks, and roofing problems that show up after Rhode Island weather.",
+    href: "/emergency-roof-repair-ri"
+  },
+  {
+    title: "Commercial Flat Roofing",
+    copy: "Commercial flat and low-slope roofing discussions for repairs, inspections, maintenance, drainage issues, and leak concerns.",
+    href: "/flat-roofing-ri"
+  },
+  {
+    title: "Emergency Roof Repair",
+    copy: "Prompt roofing help when a leak, storm, or sudden roof problem needs attention before damage spreads.",
+    href: "/emergency-roof-repair-ri"
+  }
+];
 
 const reviews = [
   {
     quote:
       "Great company! The owner is always involved and truly listens to what you need. Highly recommended - they did a very clean, professional job.",
     name: "Local Rhode Island customer"
-  },
-  {
-    quote:
-      "D.R.F. Builders RI found the leak over our Providence home, explained the repair clearly, and left the yard cleaner than when they arrived.",
-    name: "Providence homeowner"
-  },
-  {
-    quote:
-      "Our Warwick building needed roofing work handled quickly without disrupting customers. The crew communicated well and finished exactly what we needed.",
-    name: "Warwick commercial client"
   }
 ];
+// Add additional real Google reviews here once the public review text or Google Business Profile link is confirmed.
 
 const gallery = [
-  ["/assets/roof-4.webp", "Finished shingle roof in Rhode Island"],
-  ["/assets/roof-1.webp", "Residential roof project by D.R.F. Builders RI"],
-  ["/assets/roof-2.webp", "Rhode Island roof repair work in progress"],
-  ["/assets/roof-5.webp", "Roof installation crew on a Rhode Island home"]
+  ["/assets/roof-4.webp", "Completed asphalt shingle roof on a Rhode Island home"],
+  ["/assets/roof-1.webp", "Residential roof replacement project in Rhode Island"],
+  ["/assets/roof-2.webp", "D.R.F Builders RI roofing crew working on asphalt shingles in Rhode Island"],
+  ["/assets/roof-5.webp", "Rhode Island roof installation crew working on a residential property"]
 ];
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
-  name: "D.R.F. Builders RI",
+  "@id": "https://drfbuildersri.com/#roofingcontractor",
+  name: "D.R.F Builders RI",
   url: "https://drfbuildersri.com",
-  telephone: "+1-401-837-3779",
+  telephone: "(401) 837-3779",
   email: "buildersdrf@gmail.com",
   image: "https://drfbuildersri.com/assets/drf-logo.png",
   address: {
@@ -97,24 +123,27 @@ const schema = {
     addressCountry: "US"
   },
   areaServed: [
+    "Rhode Island",
     "Providence RI",
     "Cranston RI",
     "Warwick RI",
+    "Bristol RI",
     "Pawtucket RI",
     "East Providence RI",
     "Johnston RI",
     "North Providence RI",
     "Coventry RI",
-    "West Warwick RI",
-    "Rhode Island"
+    "West Warwick RI"
   ],
   serviceType: [
     "Roof Repair",
     "Roof Replacement",
     "Emergency Roof Repair",
-    "Roof Inspections",
-    "Residential Roofing",
     "Commercial Roofing",
+    "Flat Roofing",
+    "Residential Roofing",
+    "Roof Inspections",
+    "Storm Damage Roof Repair",
     "Shingle Roofing",
     "Gutter Cleaning",
     "Roof Maintenance"
@@ -131,7 +160,7 @@ export default function HomePage() {
         <section className="relative isolate overflow-hidden bg-slate-950 text-white">
           <Image
             src="/assets/roof-4.webp"
-            alt="Completed Rhode Island shingle roof"
+            alt="Completed asphalt shingle roof on a Rhode Island home"
             fill
             priority
             sizes="100vw"
@@ -144,15 +173,15 @@ export default function HomePage() {
                 Cranston-based Rhode Island roofing company
               </p>
               <h1 className="text-4xl font-black leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-                Rhode Island Roofing Contractor You Can Count On
+                Rhode Island Roofing Contractor for Roof Repair, Replacement & Emergency Service
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-                D.R.F. Builders RI provides dependable roof repairs, roof replacements, inspections, and emergency roofing
-                services for homeowners and businesses across Rhode Island.
+                D.R.F Builders RI provides residential and commercial roofing services across Cranston, Providence, Warwick,
+                Bristol, and surrounding Rhode Island communities.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href="#contact" className="rounded-md bg-orange-600 px-6 py-4 text-center font-black text-white shadow-xl shadow-orange-950/20 hover:bg-orange-700">
-                  Get a Free Estimate
+                  Request a Free Roofing Estimate
                 </a>
                 <a href="tel:+14018373779" className="rounded-md border border-white/35 bg-white/10 px-6 py-4 text-center font-black text-white backdrop-blur hover:bg-white/20">
                   Call Now
@@ -163,13 +192,15 @@ export default function HomePage() {
               <div className="border-l-4 border-orange-500 bg-white p-6 text-slate-950 shadow-2xl">
                 <Image
                   src="/assets/drf-logo.png"
-                  alt="D.R.F. Builders RI logo"
+                  alt="D.R.F Builders RI logo"
                   width={340}
                   height={140}
                   className="mb-6 h-auto w-full object-contain"
                 />
                 <p className="text-2xl font-black">Roofing. Exteriors. Rhode Island.</p>
-                <p className="mt-3 leading-7 text-slate-600">Call 401-837-3779 for repairs, replacements, inspections, and emergency service.</p>
+                <p className="mt-3 leading-7 text-slate-600">
+                  Call 401-837-3779 for roof repair, replacement, inspections, commercial roofing, and emergency service.
+                </p>
               </div>
             </div>
           </div>
@@ -189,8 +220,8 @@ export default function HomePage() {
         <section id="services" className="bg-slate-100 px-4 py-16 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Roofing services"
-            title="Roof Repair, Replacement, and Maintenance Across RI"
-            copy="D.R.F. Builders RI helps Rhode Island property owners protect homes, businesses, and multi-family buildings with practical roofing solutions."
+            title="Residential Roofing Services in Rhode Island"
+            copy="D.R.F Builders RI helps Rhode Island property owners protect homes, businesses, and multi-family buildings with practical roofing solutions."
           />
           <div className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {services.map(({ title, copy, icon: Icon, href }) => (
@@ -200,9 +231,28 @@ export default function HomePage() {
                 <p className="mt-3 leading-7 text-slate-600">{copy}</p>
                 {href ? (
                   <Link href={href} className="mt-5 inline-flex font-black text-orange-700 hover:text-orange-800">
-                    Learn more
+                    Request a Free Roofing Estimate
                   </Link>
                 ) : null}
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Free roofing estimates"
+            title="Roofing Services We Quote"
+            copy="Roofing work should be evaluated by the actual roof condition, not sold as a generic plan. Tell D.R.F Builders RI what is happening and request a clear estimate."
+          />
+          <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-2 lg:grid-cols-5">
+            {quoteServices.map((service) => (
+              <article key={service.title} className="rounded-lg border border-slate-200 bg-slate-50 p-5 shadow-sm">
+                <h3 className="text-lg font-black text-slate-950">{service.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-700">{service.copy}</p>
+                <Link href={service.href} className="mt-5 inline-flex text-sm font-black text-orange-700 hover:text-orange-800">
+                  Request a Free Roofing Estimate
+                </Link>
               </article>
             ))}
           </div>
@@ -218,14 +268,16 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-700">About D.R.F. Builders RI</p>
-              <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
-                A Local Rhode Island Roofing Company Built on Clear Communication
-              </h2>
+              <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-700">About D.R.F Builders RI</p>
+              <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Why Choose D.R.F Builders RI</h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                D.R.F. Builders RI is a local Rhode Island roofing company committed to quality workmanship, honest communication,
+                D.R.F Builders RI is a local Rhode Island roofing company committed to quality workmanship, honest communication,
                 and clean job sites. From small roof leaks to full roof replacements, our team works closely with homeowners and
                 business owners to understand their needs and deliver roofing solutions built for New England weather.
+              </p>
+              <p className="mt-4 leading-7 text-slate-600">
+                Customers call for roof inspections and maintenance, residential and commercial roofing, emergency roof leak
+                response, and free roofing estimates from a contractor focused on professional communication and clean job sites.
               </p>
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
                 <p className="rounded-md bg-slate-100 p-4 font-bold text-slate-900">Roofing company Cranston RI</p>
@@ -239,7 +291,7 @@ export default function HomePage() {
             <div className="relative min-h-[360px] bg-slate-900">
               <Image
                 src="/assets/daniel-r-fusco.png"
-                alt="Danny Fusco, founder of D.R.F. Builders RI"
+                alt="Danny Fusco, founder of D.R.F Builders RI"
                 fill
                 sizes="(max-width: 1024px) 100vw, 420px"
                 className="object-cover object-top"
@@ -247,7 +299,7 @@ export default function HomePage() {
             </div>
             <div className="p-6 text-white sm:p-8 lg:p-10">
               <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-300">About the owner</p>
-              <h3 className="text-3xl font-black tracking-tight sm:text-4xl">Danny Fusco, Founder of D.R.F. Builders RI</h3>
+              <h3 className="text-3xl font-black tracking-tight sm:text-4xl">Danny Fusco, Founder of D.R.F Builders RI</h3>
               <p className="mt-5 text-lg leading-8 text-slate-200">
                 Daniel R. Fusco, known locally as Danny, is a Rhode Island business owner who grew up in RI and built D.R.F.
                 Builders RI around the kind of service neighbors expect from someone who knows the community personally. His
@@ -256,7 +308,7 @@ export default function HomePage() {
               <p className="mt-4 leading-7 text-slate-300">
                 Choosing a local roofing contractor keeps the work close to home. It supports Rhode Island jobs, local families,
                 and a company whose reputation is built one roof and one neighborhood at a time. From Cranston to Providence,
-                Warwick, Pawtucket, and nearby RI communities, D.R.F. Builders RI is proud to serve the same place Danny calls home.
+                Warwick, Pawtucket, and nearby RI communities, D.R.F Builders RI is proud to serve the same place Danny calls home.
               </p>
               <div className="mt-7 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-md border border-white/10 bg-white/8 p-4">
@@ -277,15 +329,10 @@ export default function HomePage() {
         </section>
 
         <section id="reviews" className="roof-texture px-4 py-16 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="Reviews" title="Trusted by Rhode Island Homeowners and Businesses" light />
-          <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
+          <SectionHeading eyebrow="Reviews" title="Customer Reviews" light />
+          <div className="mx-auto grid max-w-3xl gap-4">
             {reviews.map((review) => (
               <article key={review.name} className="rounded-lg border border-white/10 bg-white p-6 text-slate-950 shadow-xl">
-                <div className="mb-4 flex gap-1 text-orange-500" aria-label="Five star review">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <Star key={index} className="h-5 w-5 fill-current" aria-hidden="true" />
-                  ))}
-                </div>
                 <blockquote className="leading-7 text-slate-700">&ldquo;{review.quote}&rdquo;</blockquote>
                 <p className="mt-5 font-black text-slate-950">{review.name}</p>
               </article>
@@ -297,15 +344,15 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
             <div>
               <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-700">Service area</p>
-              <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Roofing Services Across Rhode Island</h2>
+              <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Rhode Island Areas We Serve</h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                D.R.F. Builders RI serves Providence, Cranston, Warwick, Pawtucket, East Providence, Johnston, North Providence,
-                Coventry, West Warwick, and nearby RI communities.
+                D.R.F Builders RI serves Rhode Island homeowners and businesses, including Cranston, Providence, Warwick, Bristol,
+                Pawtucket, East Providence, and nearby Rhode Island communities.
               </p>
               <div className="mt-6 rounded-lg border border-orange-200 bg-orange-50 p-5">
                 <h3 className="text-xl font-black text-slate-950">Seasonal Snow Clearing</h3>
                 <p className="mt-2 leading-7 text-slate-700">
-                  During Rhode Island winters, D.R.F. Builders RI also offers fast, reliable snow clearing by request. Roofing
+                  During Rhode Island winters, D.R.F Builders RI also offers fast, reliable snow clearing by request. Roofing
                   remains the main focus, with seasonal snow service available for local customers who need help keeping access
                   areas clear.
                 </p>
@@ -316,6 +363,7 @@ export default function HomePage() {
                 { city: "Providence", href: "/roofing-company-providence-ri" },
                 { city: "Cranston", href: "/roofing-company-cranston-ri" },
                 { city: "Warwick", href: "/roofing-company-warwick-ri" },
+                { city: "Bristol", href: "/roofing-company-bristol-ri" },
                 { city: "Pawtucket", href: "/roof-repair-pawtucket-ri" },
                 { city: "East Providence", href: "/roofing-company-east-providence-ri" },
                 { city: "Johnston" },
@@ -342,7 +390,7 @@ export default function HomePage() {
               <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-300">Local SEO pages</p>
               <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Rhode Island Roofing Help by City and Service</h2>
               <p className="mt-4 leading-7 text-slate-300">
-                Explore local roofing pages for D.R.F. Builders RI service areas and core roofing services across Rhode Island.
+                Explore local roofing pages for D.R.F Builders RI service areas and core roofing services across Rhode Island.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
@@ -373,13 +421,13 @@ export default function HomePage() {
         <section className="bg-orange-600 px-4 py-14 text-white sm:px-6 lg:px-8">
           <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
             <div>
-              <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Need a Roofing Estimate in Rhode Island?</h2>
+              <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Request a Free Roofing Estimate</h2>
               <p className="mt-3 max-w-3xl text-lg leading-8 text-orange-50">
-                Contact D.R.F. Builders RI today for roof repairs, replacement, inspections, and emergency roofing service.
+                Contact D.R.F Builders RI today for roof repairs, replacement, inspections, and emergency roofing service.
               </p>
             </div>
             <a href="#contact" className="rounded-md bg-slate-950 px-6 py-4 text-center font-black text-white hover:bg-slate-900">
-              Request Free Estimate
+              Request a Free Roofing Estimate
             </a>
           </div>
         </section>
@@ -388,9 +436,9 @@ export default function HomePage() {
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
               <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-700">Contact</p>
-              <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Schedule a Free Roofing Estimate</h2>
+              <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Request a Free Roofing Estimate</h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                Tell us what is happening with your roof and D.R.F. Builders RI will be ready to discuss repair, replacement,
+                Tell us what is happening with your roof and D.R.F Builders RI will be ready to discuss repair, replacement,
                 inspection, or emergency roofing options.
               </p>
               <div className="mt-8 grid gap-4 text-slate-900">
