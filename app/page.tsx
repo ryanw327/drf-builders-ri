@@ -79,27 +79,32 @@ const quoteServices = [
   {
     title: "Roof Leak Repair",
     copy: "Targeted help for active leaks, ceiling stains, missing shingles, flashing issues, and water entering Rhode Island homes or businesses.",
-    href: "/roof-repair-ri"
+    href: "/roof-repair-ri",
+    cta: "Fix a Roof Leak"
   },
   {
     title: "Roof Replacement",
     copy: "Full roof replacement estimates for aging roofs, repeated leaks, storm damage, and properties ready for a stronger roofing system.",
-    href: "/roof-replacement-ri"
+    href: "/roof-replacement-ri",
+    cta: "Price a Replacement"
   },
   {
     title: "Storm Damage Roof Repair",
     copy: "Repair estimates for wind damage, lifted shingles, rain leaks, and roofing problems that show up after Rhode Island weather.",
-    href: "/emergency-roof-repair-ri"
+    href: "/emergency-roof-repair-ri",
+    cta: "Check Storm Damage"
   },
   {
     title: "Commercial Flat Roofing",
     copy: "Commercial flat and low-slope roofing discussions for repairs, inspections, maintenance, drainage issues, and leak concerns.",
-    href: "/flat-roofing-ri"
+    href: "/flat-roofing-ri",
+    cta: "Review Flat Roofing"
   },
   {
     title: "Emergency Roof Repair",
     copy: "Prompt roofing help when a leak, storm, or sudden roof problem needs attention before damage spreads.",
-    href: "/emergency-roof-repair-ri"
+    href: "/emergency-roof-repair-ri",
+    cta: "Get Urgent Help"
   }
 ];
 
@@ -263,7 +268,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-black text-slate-950">{service.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-700">{service.copy}</p>
                 <Link href={service.href} className="mt-5 inline-flex text-sm font-black text-orange-700 hover:text-orange-800">
-                  Request a Free Roofing Estimate
+                  {service.cta}
                 </Link>
               </article>
             ))}
