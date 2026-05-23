@@ -12,52 +12,64 @@ const services = [
     title: "Roof Repair",
     copy: "Fast roof repair in Rhode Island for leaks, missing shingles, flashing issues, storm damage, and aging roof trouble.",
     icon: Wrench,
-    href: "/roof-repair-ri"
+    href: "/roof-repair-ri",
+    cta: "Get Roof Repair Help"
   },
   {
     title: "Roof Replacement",
     copy: "Complete roof replacement for Rhode Island homes and businesses with durable materials built for New England weather.",
     icon: Home,
-    href: "/roof-replacement-ri"
+    href: "/roof-replacement-ri",
+    cta: "Plan a Roof Replacement"
   },
   {
     title: "Emergency Roof Repair",
     copy: "Emergency roof repair in RI when active leaks, wind damage, or sudden roof problems need prompt attention.",
-    icon: Clock
+    icon: Clock,
+    href: "/emergency-roof-repair-ri",
+    cta: "Request Emergency Help"
   },
   {
     title: "Roof Inspections",
     copy: "Detailed roof inspections across Rhode Island to identify leaks, wear, storm damage, and replacement needs.",
-    icon: ClipboardCheck
+    icon: ClipboardCheck,
+    href: "/#contact",
+    cta: "Schedule a Roof Inspection"
   },
   {
     title: "Residential Roofing",
     copy: "Residential roofing services for single-family homes, multi-family properties, and neighborhood homes throughout RI.",
     icon: HardHat,
-    href: "/residential-roofing-ri"
+    href: "/residential-roofing-ri",
+    cta: "Explore Residential Roofing"
   },
   {
     title: "Commercial Roofing",
     copy: "Commercial roofing in Rhode Island for offices, small businesses, apartment buildings, and local commercial properties.",
     icon: Building2,
-    href: "/commercial-roofing-ri"
+    href: "/commercial-roofing-ri",
+    cta: "Discuss Commercial Roofing"
   },
   {
     title: "Flat Roofing",
     copy: "Commercial flat roofing and low-slope roofing guidance for Rhode Island properties that need repair, inspection, or maintenance support.",
     icon: Building2,
-    href: "/flat-roofing-ri"
+    href: "/flat-roofing-ri",
+    cta: "Review Flat Roofing Options"
   },
   {
     title: "Shingle Roofing",
     copy: "Asphalt shingle roof installation and repair for Rhode Island properties needing dependable curb appeal and protection.",
-    icon: Hammer
+    icon: Hammer,
+    href: "/#contact",
+    cta: "Ask About Shingle Roofing"
   },
   {
     title: "Gutter Cleaning / Roof Maintenance",
     copy: "Roof maintenance and gutter cleaning to help prevent water damage and keep Rhode Island roofs performing season after season.",
     icon: CheckCircle2,
-    href: "/gutter-cleaning-roof-maintenance-ri"
+    href: "/gutter-cleaning-roof-maintenance-ri",
+    cta: "Book Roof Maintenance"
   }
 ];
 
@@ -224,14 +236,14 @@ export default function HomePage() {
             copy="D.R.F Builders RI helps Rhode Island property owners protect homes, businesses, and multi-family buildings with practical roofing solutions."
           />
           <div className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map(({ title, copy, icon: Icon, href }) => (
+            {services.map(({ title, copy, icon: Icon, href, cta }) => (
               <article key={title} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
                 <Icon className="mb-5 h-9 w-9 text-orange-600" aria-hidden="true" />
                 <h3 className="text-xl font-black text-slate-950">{title}</h3>
                 <p className="mt-3 leading-7 text-slate-600">{copy}</p>
                 {href ? (
                   <Link href={href} className="mt-5 inline-flex font-black text-orange-700 hover:text-orange-800">
-                    Request a Free Roofing Estimate
+                    {cta}
                   </Link>
                 ) : null}
               </article>
