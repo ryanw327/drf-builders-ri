@@ -366,14 +366,6 @@ export default function HomePage() {
                 D.R.F Builders RI serves Rhode Island homeowners and businesses, including Cranston, Providence, Warwick, Bristol,
                 Pawtucket, East Providence, and nearby Rhode Island communities.
               </p>
-              <div className="mt-6 rounded-lg border border-orange-200 bg-orange-50 p-5">
-                <h3 className="text-xl font-black text-slate-950">Seasonal Snow Clearing</h3>
-                <p className="mt-2 leading-7 text-slate-700">
-                  During Rhode Island winters, D.R.F Builders RI also offers fast, reliable snow clearing by request. Roofing
-                  remains the main focus, with seasonal snow service available for local customers who need help keeping access
-                  areas clear.
-                </p>
-              </div>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {[
