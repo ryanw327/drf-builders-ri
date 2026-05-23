@@ -133,12 +133,12 @@ const gallery = [
 const schema = {
   "@context": "https://schema.org",
   "@type": "RoofingContractor",
-  "@id": "https://drfbuildersri.com/#roofingcontractor",
+  "@id": "https://www.drfbuildersri.com/#roofingcontractor",
   name: "D.R.F Builders RI",
-  url: "https://drfbuildersri.com",
+  url: "https://www.drfbuildersri.com",
   telephone: "(401) 837-3779",
   email: "buildersdrf@gmail.com",
-  image: "https://drfbuildersri.com/assets/drf-logo.png",
+  image: "https://www.drfbuildersri.com/assets/drf-logo.png",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Cranston",

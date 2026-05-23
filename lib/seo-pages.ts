@@ -1,4 +1,4 @@
-export const siteUrl = "https://drfbuildersri.com";
+export const siteUrl = "https://www.drfbuildersri.com";
 
 export type SeoPage = {
   slug: string;
