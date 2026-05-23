@@ -396,10 +396,10 @@ export default function HomePage() {
         <section className="bg-slate-950 px-4 py-16 text-white sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
             <div>
-              <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-300">Local SEO pages</p>
-              <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Rhode Island Roofing Help by City and Service</h2>
+              <p className="mb-3 text-sm font-black uppercase tracking-[0.16em] text-orange-300">Roofing resources</p>
+              <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Find Roofing Help Near You</h2>
               <p className="mt-4 leading-7 text-slate-300">
-                Explore local roofing pages for D.R.F Builders RI service areas and core roofing services across Rhode Island.
+                Learn more about D.R.F Builders RI service areas and roofing services across Rhode Island.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
