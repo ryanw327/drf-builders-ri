@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { StickyMobileBar } from "@/components/StickyMobileBar";
 import "./globals.css";
 
@@ -176,6 +177,7 @@ export default function RootLayout({
       <body>
         {children}
         <StickyMobileBar />
+        <Analytics />
       </body>
     </html>
   );
