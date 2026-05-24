@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Building2, CheckCircle2, Clock, Home, Wrench } from "lucide-react";
+import { Building2, CheckCircle2, ClipboardCheck, Clock, Home, Wrench } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { ReviewCards } from "@/components/ReviewCards";
 import { ServiceAreaMap } from "@/components/ServiceAreaMap";
@@ -35,6 +35,13 @@ const topServices = [
     icon: Building2,
     href: "/commercial-roofing-ri",
     cta: "Discuss Commercial Roofing"
+  },
+  {
+    title: "Insurance Claim Assistance",
+    copy: "Roof damage documentation, repair estimates, and adjuster meeting support for Rhode Island claims.",
+    icon: ClipboardCheck,
+    href: "/roof-insurance-claim-repair-support-ri",
+    cta: "Get Claim Support"
   }
 ];
 
@@ -161,16 +168,13 @@ export default function HomePage() {
 
         <section id="services" className="bg-slate-100 px-4 py-12 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div className="mb-7">
               <div>
                 <p className="mb-2 text-sm font-black uppercase tracking-[0.16em] text-orange-700">Top roofing services</p>
                 <h2 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Roofing Help When It Matters</h2>
               </div>
-              <Link href="/roofing-services-ri" className="rounded-md border border-slate-300 bg-white px-5 py-3 text-center font-black text-slate-950 hover:border-orange-300 hover:bg-orange-50">
-                View All Roofing Services
-              </Link>
             </div>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
               {topServices.map(({ title, copy, icon: Icon, href, cta }) => (
                 <article key={title} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
                   <Icon className="mb-4 h-8 w-8 text-orange-600" aria-hidden="true" />
@@ -181,6 +185,11 @@ export default function HomePage() {
                   </Link>
                 </article>
               ))}
+            </div>
+            <div className="mt-7 flex justify-center">
+              <Link href="/roofing-services-ri" className="rounded-md border border-slate-300 bg-white px-5 py-3 text-center font-black text-slate-950 hover:border-orange-300 hover:bg-orange-50">
+                View All Roofing Services
+              </Link>
             </div>
           </div>
         </section>
