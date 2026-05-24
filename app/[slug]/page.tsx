@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CheckCircle2, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { ServiceAreaMap } from "@/components/ServiceAreaMap";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getSeoPage, type SeoPage, seoPages, siteUrl } from "@/lib/seo-pages";
@@ -58,11 +59,53 @@ export default async function SeoLandingPage({ params }: PageProps) {
   }
 
   const relatedPages = page.related?.map(getSeoPage).filter((related): related is SeoPage => Boolean(related)) ?? [];
+  const pageUrl = `${siteUrl}/${page.slug}`;
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.drfbuildersri.com"
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: page.title,
+        item: pageUrl
+      }
+    ]
+  };
+  const faqSchemaSlugs = new Set([
+    "roofing-services-ri",
+    "roof-repair-ri",
+    "roof-replacement-ri",
+    "emergency-roof-repair-ri",
+    "commercial-roofing-ri"
+  ]);
+  const faqJsonLd = faqSchemaSlugs.has(page.slug)
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: page.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
+      }
+    : null;
 
   return (
     <>
       <SiteHeader />
       <main>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+        {faqJsonLd ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} /> : null}
         <section data-mobile-hero className="relative isolate overflow-hidden bg-slate-950 text-white">
           <Image
             src="/assets/roof-1.webp"
@@ -95,16 +138,18 @@ export default async function SeoLandingPage({ params }: PageProps) {
         <section className="bg-white px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.8fr]">
             <div className="grid gap-6">
-              <article className="rounded-lg border border-slate-200 bg-slate-50 p-6">
-                <CheckCircle2 className="mb-4 h-7 w-7 text-orange-600" aria-hidden="true" />
-                <h2 className="text-2xl font-black text-slate-950">{page.servicesHeading}</h2>
-                <p className="mt-3 leading-7 text-slate-700">
-                  D.R.F Builders RI provides {page.serviceName.toLowerCase()} for local homeowners and businesses in {page.locationName}
-                  {page.locationName === "Rhode Island" ? "" : ", RI"}. Services may include roof leak repair, storm damage roof repair,
-                  flashing repair, shingle replacement, roof inspections, maintenance, emergency roof service, residential roofing, commercial
-                  roofing, and flat roofing guidance where appropriate.
-                </p>
-              </article>
+              {page.slug === "roofing-services-ri" ? null : (
+                <article className="rounded-lg border border-slate-200 bg-slate-50 p-6">
+                  <CheckCircle2 className="mb-4 h-7 w-7 text-orange-600" aria-hidden="true" />
+                  <h2 className="text-2xl font-black text-slate-950">{page.servicesHeading}</h2>
+                  <p className="mt-3 leading-7 text-slate-700">
+                    D.R.F Builders RI provides {page.serviceName.toLowerCase()} for local homeowners and businesses in {page.locationName}
+                    {page.locationName === "Rhode Island" ? "" : ", RI"}. Services may include roof leak repair, storm damage roof repair,
+                    flashing repair, shingle replacement, roof inspections, maintenance, emergency roof service, residential roofing, commercial
+                    roofing, and flat roofing guidance where appropriate.
+                  </p>
+                </article>
+              )}
               <article className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
                 <h2 className="text-2xl font-black text-slate-950">Common Roofing Problems We Fix</h2>
                 <ul className="mt-4 grid gap-3 text-slate-700 sm:grid-cols-2">
@@ -205,7 +250,10 @@ export default async function SeoLandingPage({ params }: PageProps) {
                 Tell us what is happening with your roof and the form will send your request directly to D.R.F Builders RI.
               </p>
             </div>
-            <ContactForm />
+            <div>
+              <ServiceAreaMap />
+              <ContactForm />
+            </div>
           </div>
         </section>
       </main>

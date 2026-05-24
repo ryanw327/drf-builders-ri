@@ -107,7 +107,7 @@ export async function POST(request: Request) {
         <h1 style="font-size:22px;margin:0 0 16px">New Roofing Lead</h1>
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Phone:</strong> <a href="${telHref}">${escapeHtml(phone)}</a></p>
-        <p><strong>Email:</strong> ${email ? `<a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a>` : "Not provided"}</p>
+        <p><strong>Email:</strong> ${email ? escapeHtml(email) : "Not provided"}</p>
         <p><strong>Service:</strong> ${escapeHtml(service)}</p>
         <p><strong>Message:</strong><br />${escapeHtml(message || "No message provided.").replace(/\n/g, "<br />")}</p>
         <p><strong>Submitted:</strong> ${escapeHtml(submittedAt)} ET</p>

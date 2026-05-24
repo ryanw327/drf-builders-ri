@@ -300,12 +300,17 @@ export const servicePages: SeoPage[] = [
       {
         title: "Roof Repair, Replacement, and Emergency Service",
         copy:
-          "From active roof leaks to full roof replacement, D.R.F Builders RI helps property owners understand the problem, review the right repair path, and move forward with clear communication."
+          "From active roof leaks to full roof replacement, D.R.F Builders RI helps Rhode Island property owners understand what is happening before work begins. A leak in Cranston, Providence, Warwick, or Bristol may come from worn shingles, flashing, storm damage, roof penetrations, or drainage problems, so the first step is looking at the roof carefully and explaining the likely source. When a repair is enough, the recommendation stays focused on the repair. When the roof is aging or damage is widespread, Danny explains why replacement may be the better long-term path."
       },
       {
         title: "Residential and Commercial Roofing",
         copy:
-          "D.R.F Builders RI works with Rhode Island homeowners, businesses, landlords, and property owners who need practical roofing support."
+          "D.R.F Builders RI works with Rhode Island homeowners, businesses, landlords, and property owners who need practical roofing support. Residential work often means helping a homeowner protect a house, stop a leak, or plan a replacement without feeling rushed into the wrong decision. Commercial work may involve scheduling, access, tenant communication, and keeping disruption as low as possible. In both cases, the goal is straightforward communication, clean work areas, and roofing solutions that make sense for the property."
+      },
+      {
+        title: "Rhode Island Roofing Challenges",
+        copy:
+          "Rhode Island roofs take a beating from New England weather. Ice dams, heavy snow loads, wind-driven rain, coastal moisture, and summer heat cycles can all weaken shingles, flashing, roof edges, and ventilation over time. Local experience matters because roof problems here are often seasonal and can look different after winter freeze-thaw cycles than they do after a summer storm. Homeowners should look for a roofing contractor who explains the issue clearly, checks the surrounding roof system, and gives a practical repair or replacement recommendation."
       }
     ],
     commonProblems: ["Roof leaks", "Storm damage", "Missing shingles", "Flashing problems", "Roof maintenance needs", "Insurance-related roof repairs"],
@@ -397,12 +402,12 @@ export const servicePages: SeoPage[] = [
       {
         title: "Leak, Storm, and Shingle Repairs",
         copy:
-          "We repair common Rhode Island roofing issues including missing shingles, active leaks, flashing problems, wind damage, and roof wear."
+          "We repair common Rhode Island roofing issues including missing shingles, active leaks, flashing problems, wind damage, and roof wear. When diagnosing a leak, D.R.F Builders RI looks at the roof surface, roof penetrations, chimney and wall flashing, valleys, gutters, and nearby interior staining when available. Water can travel before it shows up inside, so the visible ceiling spot is not always directly under the source. Danny explains what he finds and focuses the repair on the area causing the problem whenever a targeted repair is the right choice."
       },
       {
         title: "Clear Recommendations Before Bigger Work",
         copy:
-          "Not every roof problem needs a replacement. D.R.F Builders RI explains whether a repair, maintenance visit, or replacement makes the most sense."
+          "Not every roof problem needs a replacement. D.R.F Builders RI explains whether a repair, maintenance visit, or replacement makes the most sense based on the roof age, the amount of damage, the condition of surrounding shingles, and whether leaks keep coming back. Storm damage repair in Rhode Island can include replacing lifted or missing shingles, sealing or replacing flashing, checking roof edges, and documenting visible damage when insurance repair support is needed. While waiting for help, homeowners should protect belongings, place a bucket under active drips, avoid climbing onto a wet or icy roof, and call quickly if water is spreading. The goal is to stop the immediate problem and give a clear next step without overselling work the roof does not need."
       }
     ],
     commonProblems: ["Roof leaks during heavy rain", "Missing, curling, or lifted shingles", "Storm damage from wind and debris", "Flashing leaks around vents and chimneys", "Water problems caused by clogged gutters"],

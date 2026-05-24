@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Building2, CheckCircle2, Clock, Home, Star, Wrench } from "lucide-react";
+import { Building2, CheckCircle2, Clock, Home, Wrench } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { ReviewCards } from "@/components/ReviewCards";
+import { ServiceAreaMap } from "@/components/ServiceAreaMap";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -50,15 +52,6 @@ const gallery = [
   ["/assets/roof-2.webp", "D.R.F Builders RI roofing crew working on asphalt shingles in Rhode Island", "Crew on roof repair"],
   ["/assets/roof-5.webp", "Rhode Island roof installation crew working on a residential property", "Roof installation"]
 ];
-
-const reviews = [
-  {
-    quote:
-      "Great company! The owner is always involved and truly listens to what you need. Highly recommended - they did a very clean, professional job.",
-    name: "Local Rhode Island customer"
-  }
-];
-// Add additional real Google reviews here once the public review text or Google Business Profile link is confirmed.
 
 const schema = {
   "@context": "https://schema.org",
@@ -225,26 +218,16 @@ export default function HomePage() {
         </section>
 
         <section id="reviews" className="roof-texture px-4 py-12 sm:px-6 lg:px-8">
-          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
+          <div className="mx-auto max-w-7xl">
             <div>
               <p className="mb-2 text-sm font-black uppercase tracking-[0.16em] text-orange-300">Customer reviews</p>
               <h2 className="text-3xl font-black tracking-tight text-white sm:text-4xl">Trusted by Rhode Island Homeowners</h2>
-              <p className="mt-4 leading-7 text-slate-300">
+              <p className="mt-4 max-w-3xl leading-7 text-slate-300">
                 Clear communication, owner involvement, and clean job sites are at the center of the work.
               </p>
             </div>
-            <div className="rounded-lg border border-white/10 bg-white p-6 text-slate-950 shadow-xl">
-              <div className="mb-3 flex gap-1 text-orange-500" aria-label="Customer review rating">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Star key={index} className="h-5 w-5 fill-current" aria-hidden="true" />
-                ))}
-              </div>
-              {reviews.map((review) => (
-                <blockquote key={review.name}>
-                  <p className="text-lg leading-8 text-slate-700">&ldquo;{review.quote}&rdquo;</p>
-                  <footer className="mt-4 font-black text-slate-950">{review.name}</footer>
-                </blockquote>
-              ))}
+            <div className="mt-8">
+              <ReviewCards />
             </div>
           </div>
         </section>
@@ -291,7 +274,10 @@ export default function HomePage() {
                 Call 401-837-3779
               </a>
             </div>
-            <ContactForm />
+            <div>
+              <ServiceAreaMap />
+              <ContactForm />
+            </div>
           </div>
           <div className="mx-auto mt-8 grid max-w-7xl gap-3 text-sm font-bold sm:grid-cols-2 lg:grid-cols-4">
             <Link href="/roof-insurance-claim-repair-support-ri" className="rounded-md bg-white/15 px-4 py-3 hover:bg-white/25">

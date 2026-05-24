@@ -8,6 +8,7 @@
   --orange: #f97316;
   --orange-dark: #c2410c;
   --line: #d9dee7;
+  --color-text-secondary: #64748b;
 }
 
 * {
@@ -48,4 +49,10 @@ a {
 .focus-ring {
   outline: 3px solid rgba(249, 115, 22, 0.42);
   outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .service-area-map iframe {
+    height: 200px;
+  }
 }
