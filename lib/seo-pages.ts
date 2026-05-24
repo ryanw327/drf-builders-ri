@@ -443,12 +443,22 @@ export const servicePages: SeoPage[] = [
       {
         title: "Replacement Roofing for RI Properties",
         copy:
-          "A properly installed roof protects the structure, improves curb appeal, and helps prevent recurring leaks from an aging roof system."
+          "A properly installed roof protects the structure, improves curb appeal, and helps prevent recurring leaks from an aging roof system. D.R.F Builders RI looks at the age of the roof, shingle condition, soft spots, decking concerns, flashing, ventilation, and signs of repeated water entry before recommending replacement. Many Rhode Island homes deal with winter freeze-thaw cycles, wind-driven rain, heavy snow, and summer heat that can wear down shingles and roof components over time. Danny explains whether the roof is simply worn, whether storm damage is part of the problem, and what should be addressed before new roofing materials go on."
       },
       {
         title: "Built for Rain, Snow, Wind, and Ice",
         copy:
-          "Rhode Island roofs need materials and workmanship that can handle winter weather, spring rain, coastal moisture, and seasonal temperature swings."
+          "Rhode Island roofs need materials and workmanship that can handle winter weather, spring rain, coastal moisture, and seasonal temperature swings. A replacement project may include removing old roofing, inspecting roof decking, replacing damaged wood, improving flashing details, and checking ventilation so the new roof can perform properly. D.R.F Builders RI can explain material options, shingle choices, underlayment, ice and water protection, and the difference between a clean tear-off and situations where an overlay is not the right call. The goal is a roof replacement that is built for New England weather, not just a quick cosmetic cover-up."
+      },
+      {
+        title: "What to Expect During Roof Replacement",
+        copy:
+          "Most roof replacement conversations start with an inspection and a clear estimate, then move into scheduling, materials, and preparation. Homeowners want to know how long the project will take, how the property will be protected, and what cleanup looks like after the work is done. D.R.F Builders RI keeps the process straightforward by explaining access, debris handling, nail cleanup, driveway considerations, and what the homeowner should expect while the crew is working. Project timing depends on roof size, weather, material availability, decking repairs, and how much detail work is involved."
+      },
+      {
+        title: "Cost Factors and Warranty Questions",
+        copy:
+          "Roof replacement cost depends on roof size, slope, layers being removed, decking condition, material selection, flashing details, ventilation needs, disposal, and whether storm or insurance-related repair documentation is involved. A lower quote is not always better if it skips roof decking issues, ventilation concerns, or cleanup expectations. D.R.F Builders RI walks through the estimate so homeowners understand what is included before making a decision. Warranty details can vary by material and installation scope, so Danny can explain what applies to the specific roof system being discussed."
       }
     ],
     commonProblems: ["Recurring roof leaks", "Aging shingles near the end of service life", "Storm-damaged roof sections", "Soft spots or water-damaged decking", "Repeated repair needs after heavy weather"],
@@ -457,11 +467,32 @@ export const servicePages: SeoPage[] = [
     faqs: [
       {
         question: "How do I know if I need roof replacement?",
-        answer: "Signs include recurring leaks, widespread shingle wear, storm damage, and ongoing repair problems. D.R.F Builders RI can inspect the roof and explain your options."
+        answer:
+          "Signs include recurring leaks, widespread shingle wear, missing or curling shingles, storm damage, soft decking, age-related failure, and ongoing repair problems. D.R.F Builders RI can inspect the roof, check the surrounding roof system, and explain whether repair or replacement makes more sense."
       },
       {
         question: "Does D.R.F Builders RI replace roofs on homes and businesses?",
         answer: "Yes. D.R.F Builders RI provides roof replacement for residential and commercial properties across Rhode Island."
+      },
+      {
+        question: "Do you inspect roof decking during replacement?",
+        answer:
+          "Yes. Decking condition matters because new shingles need a solid surface underneath. If damaged or soft decking is found, Danny can explain the issue and the repair needed before the new roofing system is completed."
+      },
+      {
+        question: "Is tear-off better than roofing over old shingles?",
+        answer:
+          "A tear-off is often the better choice because it allows the roof deck, flashing, and problem areas to be inspected. Roofing over old shingles can hide damage and may not be appropriate depending on the roof condition, number of layers, and local code requirements."
+      },
+      {
+        question: "How long does a roof replacement take?",
+        answer:
+          "Timing depends on roof size, slope, weather, material availability, and whether decking repairs are needed. Many straightforward residential replacements can move quickly once scheduled, but D.R.F Builders RI will explain the expected timeline for the specific property."
+      },
+      {
+        question: "What affects the cost of roof replacement?",
+        answer:
+          "Cost factors include roof size, pitch, tear-off needs, number of layers, decking condition, shingle or material choice, flashing work, ventilation, disposal, access, and cleanup. A detailed estimate helps homeowners compare the actual scope of work, not just the bottom-line price."
       }
     ],
     related: ["roofing-company-cranston-ri", "roofing-company-warwick-ri", "residential-roofing-ri"]
