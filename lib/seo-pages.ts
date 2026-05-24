@@ -478,18 +478,18 @@ export const servicePages: SeoPage[] = [
     eyebrow: "Emergency roof repair",
     h1: "Emergency Roof Repair in Rhode Island",
     intro:
-      "D.R.F Builders RI provides emergency roof repair for homeowners and businesses across Rhode Island, including active leak repair, storm damage repair, flashing repair, shingle replacement, and urgent roof service.",
+      "D.R.F Builders RI provides emergency roof repair for homeowners and businesses across Rhode Island, including active leak repair, storm damage repair, temporary protection, flashing repair, shingle replacement, and urgent roof service.",
     servicesHeading: "Emergency Roof Repair Services in Rhode Island",
     sections: [
       {
         title: "Urgent Roof Leak Response",
         copy:
-          "When water is entering a home or business, fast communication matters. D.R.F Builders RI helps Rhode Island customers respond to sudden roof leaks and storm-related roof problems."
+          "When water is entering a home or business, fast communication matters. D.R.F Builders RI helps Rhode Island customers respond to sudden roof leaks, storm-related roof problems, missing shingles, and water around vents, chimneys, skylights, or roof edges. If it is safe, move belongings away from the leak, place a bucket under active drips, and avoid touching wet ceilings or electrical fixtures. Do not climb onto a wet, icy, or storm-damaged roof. Call or text 401-837-3779 and, if possible, send photos of the leak, the ceiling stain, the outside roof area, and any missing shingles so Danny can understand the situation before arriving."
       },
       {
         title: "Storm Damage and Temporary Protection",
         copy:
-          "Wind, rain, snow, and debris can damage shingles, flashing, and roof edges. Our team can inspect the problem and explain repair options."
+          "Wind, rain, snow, and debris can damage shingles, flashing, ridge areas, vents, gutters, and roof edges. An emergency roof repair may involve stopping the immediate leak, replacing blown-off shingles, sealing a flashing issue, documenting visible storm damage, or installing temporary protection such as tarping when conditions allow. Some repairs can be completed quickly, while others need a safer weather window or a larger follow-up repair. D.R.F Builders RI explains what can be handled right away, what should wait until the roof is safe to work on, and whether the damage points toward a repair, insurance-related documentation, or a larger replacement conversation."
       }
     ],
     commonProblems: ["Active roof leaks", "Storm-damaged shingles", "Water around vents or chimneys", "Wind-lifted shingles", "Roof problems discovered after heavy rain or snow"],
@@ -498,11 +498,33 @@ export const servicePages: SeoPage[] = [
     faqs: [
       {
         question: "What should I do if my roof is leaking?",
-        answer: "Protect belongings if safe, avoid unsafe roof access, and call D.R.F Builders RI so the roof issue can be reviewed and the next repair step can be discussed."
+        answer:
+          "Protect belongings if safe, place a bucket under active dripping, avoid rooms with wet electrical fixtures, and do not climb onto the roof. Call or text D.R.F Builders RI at 401-837-3779 and send photos of the leak, ceiling stain, and outside roof area if you can do so safely."
       },
       {
         question: "Do you help with storm damage roof repair?",
-        answer: "Yes. D.R.F Builders RI helps Rhode Island customers with roof leaks, missing shingles, and storm damage repair needs."
+        answer:
+          "Yes. D.R.F Builders RI helps Rhode Island customers with roof leaks, missing shingles, lifted shingles, flashing damage, wind damage, and storm-related roof repair needs."
+      },
+      {
+        question: "Can D.R.F Builders RI tarp a roof during an emergency?",
+        answer:
+          "When weather and roof conditions allow, temporary protection such as tarping may be an option to help limit water entry until permanent repairs can be completed. Safety comes first, especially during active storms, high wind, ice, or unsafe roof conditions."
+      },
+      {
+        question: "Can I text photos before someone comes out?",
+        answer:
+          "Yes. Photos can help Danny understand the problem faster. Helpful photos include the ceiling stain or active leak, the room affected, any missing shingles visible from the ground, and the general roof area where the problem appears to be coming from."
+      },
+      {
+        question: "What counts as an emergency roof repair?",
+        answer:
+          "Emergency roof repair usually means active water entering the property, storm damage that leaves the roof exposed, missing shingles after wind, water near electrical areas, or roof damage that could get worse quickly if it is not reviewed."
+      },
+      {
+        question: "How fast can someone respond?",
+        answer:
+          "Response timing depends on weather, call volume, roof safety, and location, but D.R.F Builders RI prioritizes urgent leaks and storm-related roof problems. Calling or texting with photos is the fastest way to start the conversation."
       }
     ],
     related: ["roof-repair-ri", "roof-replacement-ri", "roofing-company-warwick-ri"]
