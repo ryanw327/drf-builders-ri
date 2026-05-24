@@ -131,14 +131,6 @@ export default function HomePage() {
                   Call Now
                 </a>
               </div>
-              <div className="mt-6 grid gap-2 text-sm font-bold text-slate-100 sm:grid-cols-2 lg:grid-cols-3">
-                {trustItems.map((item) => (
-                  <div key={item} className="flex items-center gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-2 backdrop-blur">
-                    <CheckCircle2 className="h-4 w-4 flex-none text-orange-300" aria-hidden="true" />
-                    {item}
-                  </div>
-                ))}
-              </div>
             </div>
             <div className="relative hidden min-h-[390px] overflow-hidden rounded-lg border border-white/15 bg-white/10 shadow-2xl lg:block">
               <Image
