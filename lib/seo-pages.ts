@@ -33,9 +33,9 @@ export const cityPages: SeoPage[] = [
     serviceName: "Roofing Services",
     locationName: "Cranston",
     title: "Roofing Company Cranston RI",
-    metaTitle: "Roofing Company Cranston RI | Roof Repair & Replacement",
+    metaTitle: "Roofing Company Cranston RI | Free Roofing Estimates",
     metaDescription:
-      "D.R.F Builders RI provides roof repair, roof replacement, emergency roof repair, inspections, maintenance, and commercial roofing in Cranston, RI.",
+      "Need roofing help in Cranston, RI? D.R.F Builders RI handles leaks, storm damage, roof replacement, inspections, and insurance claim support. Free estimates.",
     eyebrow: "Cranston roofing contractor",
     h1: "Roofing Services in Cranston, RI",
     intro:
@@ -75,9 +75,9 @@ export const cityPages: SeoPage[] = [
     serviceName: "Roofing Services",
     locationName: "Providence",
     title: "Roofing Company Providence RI",
-    metaTitle: "Roofing Company Providence RI | Roof Repair & Commercial Roofing",
+    metaTitle: "Roofing Company Providence RI | Roof Repair & Leaks",
     metaDescription:
-      "D.R.F Builders RI handles roof repair, roof replacement, emergency roofing, maintenance, and commercial roofing across Providence, RI.",
+      "Providence roof leak or storm damage? D.R.F Builders RI provides roof repair, replacement, emergency service, and commercial roofing. Free estimates.",
     eyebrow: "Providence roofing contractor",
     h1: "Roofing Services in Providence, RI",
     intro:
@@ -117,9 +117,9 @@ export const cityPages: SeoPage[] = [
     serviceName: "Roofing Services",
     locationName: "Warwick",
     title: "Roofing Company Warwick RI",
-    metaTitle: "Roofing Company Warwick RI | Roof Repair & Replacement",
+    metaTitle: "Roofing Company Warwick RI | Roof Repair & Free Estimates",
     metaDescription:
-      "D.R.F Builders RI provides roof repair, roof replacement, emergency roof leak help, maintenance, and commercial roofing for Warwick, RI homes and businesses.",
+      "Warwick, RI roofing help for leaks, missing shingles, storm damage, roof replacement, maintenance, and commercial properties. Call or text D.R.F Builders RI.",
     eyebrow: "Warwick roofing contractor",
     h1: "Roofing Services in Warwick, RI",
     intro:
@@ -159,9 +159,9 @@ export const cityPages: SeoPage[] = [
     serviceName: "Roof Repair",
     locationName: "Pawtucket",
     title: "Roof Repair Pawtucket RI",
-    metaTitle: "Roof Repair in Pawtucket, RI | D.R.F Builders RI",
+    metaTitle: "Roof Repair Pawtucket RI | Leaks, Shingles & Storm Damage",
     metaDescription:
-      "D.R.F Builders RI offers roof repair in Pawtucket, RI for leaks, missing shingles, storm damage, flashing repair, inspections, and maintenance.",
+      "Roof leak in Pawtucket, RI? D.R.F Builders RI repairs leaks, missing shingles, flashing issues, storm damage, and roof-edge problems. Free estimates.",
     eyebrow: "Pawtucket roof repair",
     h1: "Roof Repair in Pawtucket, RI",
     intro:
@@ -201,9 +201,9 @@ export const cityPages: SeoPage[] = [
     serviceName: "Roofing Services",
     locationName: "Bristol",
     title: "Roofing Company Bristol RI",
-    metaTitle: "Roofing Services in Bristol, RI | D.R.F Builders RI",
+    metaTitle: "Roofing Company Bristol RI | Roof Repair & Replacement",
     metaDescription:
-      "D.R.F Builders RI provides roof repair, roof replacement, emergency roofing, inspections, maintenance, and commercial roofing in Bristol, RI.",
+      "Bristol, RI roofing contractor for roof repair, replacement, inspections, storm damage, emergency leaks, and maintenance. Call or text for a free estimate.",
     eyebrow: "Bristol roofing contractor",
     h1: "Roofing Services in Bristol, RI",
     intro:
@@ -243,9 +243,9 @@ export const cityPages: SeoPage[] = [
     serviceName: "Roofing Services",
     locationName: "East Providence",
     title: "Roofing Company East Providence RI",
-    metaTitle: "Roofing Services in East Providence, RI | D.R.F Builders RI",
+    metaTitle: "Roofing Company East Providence RI | Roof Repair & Leaks",
     metaDescription:
-      "D.R.F Builders RI provides roof repair, roof replacement, emergency roofing, maintenance, and commercial roofing in East Providence, RI.",
+      "East Providence roofing help for leaks, storm damage, shingles, inspections, maintenance, commercial roofing, and emergency roof service. Free estimates.",
     eyebrow: "East Providence roofing contractor",
     h1: "Roofing Services in East Providence, RI",
     intro:
@@ -288,9 +288,9 @@ export const servicePages: SeoPage[] = [
     serviceName: "Roofing Services",
     locationName: "Rhode Island",
     title: "Roofing Services RI",
-    metaTitle: "Roofing Services in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Rhode Island Roofing Services | Repair, Replacement & Claims",
     metaDescription:
-      "D.R.F Builders RI provides roofing services across Rhode Island, including roof repair, roof replacement, emergency roofing, inspections, commercial roofing, and insurance repair support.",
+      "D.R.F Builders RI provides Rhode Island roof repair, replacement, emergency roofing, inspections, commercial roofing, maintenance, and insurance claim support.",
     eyebrow: "Rhode Island roofing services",
     h1: "Roofing Services in Rhode Island",
     intro:
@@ -336,9 +336,9 @@ export const servicePages: SeoPage[] = [
     serviceName: "Roof Insurance Claim Repair Support",
     locationName: "Rhode Island",
     title: "Roof Insurance Claim Repair Support RI",
-    metaTitle: "Roof Insurance Claim Repair Support in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Roof Insurance Claim Help RI | Storm Damage Repair Support",
     metaDescription:
-      "D.R.F Builders RI helps Rhode Island homeowners with storm damage documentation, roof repair estimates, adjuster meeting support, and insurance-related roof repairs.",
+      "Roof storm damage claim in Rhode Island? D.R.F Builders RI helps document damage, prepare repair estimates, meet adjusters, and complete roofing repairs.",
     eyebrow: "Insurance roof repair support",
     h1: "Roof Insurance Claim Repair Support in Rhode Island",
     intro:
@@ -395,9 +395,9 @@ export const servicePages: SeoPage[] = [
     serviceName: "Roof Repair",
     locationName: "Rhode Island",
     title: "Roof Repair RI",
-    metaTitle: "Roof Repair in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Roof Repair RI | Leaks, Storm Damage & Missing Shingles",
     metaDescription:
-      "D.R.F Builders RI provides roof repair across Rhode Island for leaks, storm damage, missing shingles, flashing repair, emergency leaks, and aging roofs.",
+      "Need roof repair in RI? D.R.F Builders RI fixes leaks, storm damage, missing shingles, flashing problems, and emergency roof issues. Free estimates.",
     eyebrow: "Rhode Island roof repair",
     h1: "Roof Repair in Rhode Island",
     intro:
@@ -436,9 +436,9 @@ export const servicePages: SeoPage[] = [
     serviceName: "Roof Replacement",
     locationName: "Rhode Island",
     title: "Roof Replacement RI",
-    metaTitle: "Roof Replacement in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Roof Replacement RI | Local Roofing Contractor",
     metaDescription:
-      "D.R.F Builders RI provides roof replacement across Rhode Island for homes, multi-family properties, local businesses, and aging roof systems.",
+      "D.R.F Builders RI provides roof replacement across Rhode Island for aging, leaking, storm-damaged, and worn roof systems. Call or text for a free estimate.",
     eyebrow: "Rhode Island roof replacement",
     h1: "Roof Replacement in Rhode Island",
     intro:
@@ -508,9 +508,9 @@ export const servicePages: SeoPage[] = [
     serviceName: "Emergency Roof Repair",
     locationName: "Rhode Island",
     title: "Emergency Roof Repair RI",
-    metaTitle: "Emergency Roof Repair in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Emergency Roof Repair RI | Active Leaks & Storm Damage",
     metaDescription:
-      "D.R.F Builders RI provides emergency roof repair in Rhode Island for active leaks, storm damage, missing shingles, and urgent roof problems.",
+      "Active roof leak in Rhode Island? Call or text D.R.F Builders RI for emergency roof repair, tarping when safe, storm damage help, and free estimates.",
     eyebrow: "Emergency roof repair",
     h1: "Emergency Roof Repair in Rhode Island",
     intro:
@@ -571,7 +571,7 @@ export const servicePages: SeoPage[] = [
     serviceName: "Gutter Cleaning and Roof Maintenance",
     locationName: "Rhode Island",
     title: "Gutter Cleaning and Roof Maintenance RI",
-    metaTitle: "Gutter Cleaning & Roof Maintenance in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Gutter Cleaning & Roof Maintenance RI | D.R.F Builders",
     metaDescription:
       "D.R.F Builders RI offers gutter cleaning and roof maintenance in Rhode Island to help prevent water damage, roof leaks, and seasonal roof issues.",
     eyebrow: "Roof maintenance",
@@ -612,9 +612,9 @@ export const servicePages: SeoPage[] = [
     serviceName: "Commercial Roofing",
     locationName: "Rhode Island",
     title: "Commercial Roofing RI",
-    metaTitle: "Commercial Roofing in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Commercial Roofing RI | Roof Repair, Leaks & Maintenance",
     metaDescription:
-      "D.R.F Builders RI provides commercial roof repair, maintenance, replacement planning, emergency leak help, and flat roofing support for Rhode Island businesses.",
+      "Commercial roofing in RI for roof leaks, repairs, maintenance, storm damage, replacement planning, and low-slope roof concerns. Free estimates.",
     eyebrow: "Commercial roofing",
     h1: "Commercial Roofing in Rhode Island",
     intro:
@@ -699,9 +699,9 @@ export const servicePages: SeoPage[] = [
     serviceName: "Residential Roofing",
     locationName: "Rhode Island",
     title: "Residential Roofing RI",
-    metaTitle: "Residential Roofing in Rhode Island | D.R.F Builders RI",
+    metaTitle: "Residential Roofing RI | Roof Repair & Replacement",
     metaDescription:
-      "D.R.F Builders RI provides residential roofing across Rhode Island, including roof repair, roof replacement, inspections, emergency roofing, and maintenance.",
+      "Rhode Island residential roofing for leaks, storm damage, missing shingles, inspections, roof replacement, emergency service, and maintenance. Free estimates.",
     eyebrow: "Residential roofing",
     h1: "Residential Roofing in Rhode Island",
     intro:

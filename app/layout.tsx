@@ -135,16 +135,16 @@ const localBusinessJsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Roofing Contractor in Rhode Island | D.R.F Builders RI",
+  title: "Rhode Island Roofing Contractor | Roof Repair & Free Estimates",
   description:
-    "D.R.F Builders RI provides roof repair, roof replacement, emergency roofing, flat roofing, and commercial roofing services across Rhode Island. Call for a free estimate.",
+    "D.R.F Builders RI helps Rhode Island homeowners and businesses with roof repair, replacement, emergency leaks, storm damage, and insurance claim support. Call or text for a free estimate.",
   alternates: {
     canonical: "/"
   },
   openGraph: {
-    title: "Roofing Contractor in Rhode Island | D.R.F Builders RI",
+    title: "Rhode Island Roofing Contractor | Roof Repair & Free Estimates",
     description:
-      "Roof repair, roof replacement, emergency roofing, flat roofing, and commercial roofing services across Rhode Island.",
+      "Roof repair, roof replacement, emergency leaks, storm damage, commercial roofing, and insurance claim support across Rhode Island.",
     url: siteUrl,
     siteName: "D.R.F Builders RI",
     images: [
