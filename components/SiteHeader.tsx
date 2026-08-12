@@ -4,7 +4,7 @@ const navItems = [
   ["About", "/#about"],
   ["Services", "/#services"],
   ["Reviews", "/#reviews"],
-  ["Service Area", "/#service-area"],
+  ["Service Area", "/roofing-services-ri"],
   ["Contact", "/#contact"]
 ];
 

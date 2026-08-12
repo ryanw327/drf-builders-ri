@@ -293,6 +293,18 @@ export default function HomePage() {
             <Link href="/roofing-company-warwick-ri" className="rounded-md bg-white/15 px-4 py-3 hover:bg-white/25">
               Warwick Roofing
             </Link>
+            <Link href="/roofing-company-bristol-ri" className="rounded-md bg-white/15 px-4 py-3 hover:bg-white/25">
+              Bristol Roofing
+            </Link>
+            <Link href="/roof-repair-pawtucket-ri" className="rounded-md bg-white/15 px-4 py-3 hover:bg-white/25">
+              Pawtucket Roof Repair
+            </Link>
+            <Link href="/roofing-company-east-providence-ri" className="rounded-md bg-white/15 px-4 py-3 hover:bg-white/25">
+              East Providence Roofing
+            </Link>
+            <Link href="/residential-roofing-ri" className="rounded-md bg-white/15 px-4 py-3 hover:bg-white/25">
+              Residential Roofing
+            </Link>
           </div>
         </section>
       </main>
